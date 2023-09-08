@@ -1,0 +1,80 @@
+.site-footer {
+    padding: 30px 20px;
+    background-color: black;
+    color: white;
+
+    @include media-up(m) {
+        padding: 50px 30px;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+
+        @include media-up(m) {
+            flex-direction: row;
+        }
+
+        .block {
+            flex: 1;
+
+            &:not(:first-child) {
+                margin-top: 28px;
+
+                @include media-up(m) {
+                    margin-top: 0;
+                }
+            }
+
+            &.links {
+                .follow-us {
+                    margin-top: 20px;
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        margin-right: 10px;
+
+                        &:hover{
+                            color: inherit;
+                            opacity: 0.7;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .page-links {
+                    li:not(:first-child) {
+                        margin-top: 10px;
+                    }
+
+                    a {
+                        text-decoration: underline;
+
+                        &:hover{
+                            color: inherit;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .site-logo {
+        text-align: right;
+        margin-top: 15px;
+
+        img {
+            height: 30px;
+            width: auto;
+            filter: invert(100%);
+
+            @include media-up(l) {
+                height: 45px;
+            }
+        }
+    }
+}

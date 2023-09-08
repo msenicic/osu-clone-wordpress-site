@@ -1,0 +1,125 @@
+{
+    "key": "group_637a1316cbe20",
+    "title": "Home - Special Fields",
+    "fields": [
+        {
+            "key": "field_637ccd61da95f",
+            "label": "Accent Bg Color",
+            "name": "page_accent_bg_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Set accent bg color (for buttons specifically).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ededed",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_637ccdaeda960",
+            "label": "Accent Text Color",
+            "name": "page_accent_txt_color",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "Set page accent text color (for buttons specifically).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "black": "Black",
+                "white": "White"
+            },
+            "default_value": "black",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_637cce64da961",
+            "label": "Background Color",
+            "name": "page_bg_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "Choose page background color.\r\nDefault color is #ededed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ededed",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_637cce98da962",
+            "label": "Text Color",
+            "name": "page_text_color",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "Choose text color for page.\r\nIf empty, black will be default color.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "black": "Black",
+                "white": "White"
+            },
+            "default_value": "black",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-parts\/template-home.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-search.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1670380375
+}

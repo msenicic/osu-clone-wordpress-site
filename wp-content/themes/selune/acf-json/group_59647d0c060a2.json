@@ -1,0 +1,404 @@
+{
+    "key": "group_59647d0c060a2",
+    "title": "[THEME] Social Network",
+    "fields": [
+        {
+            "key": "field_5901d1eb3058d",
+            "label": "Socials",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_597adc71ecab8",
+            "label": ":::Important NOTE:::",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Due to customization freedom available to you, it is up to you to take care about number of social networks, their repeatability, correctness of a links, etc...\r\nEx. Do not choose 2x same social network or if layout is specifically made for 4 social networks, adding 5th might break the layout.\r\nIf you need some additional custom implementation, you need to contact developer.\r\n\r\nYou can switch order which social network shows up first on page.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_597ada6386f41",
+            "label": "Social Networking",
+            "name": "socials",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Add Social Network",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Social Network",
+            "collapsed": "field_5901d24e30590",
+            "sub_fields": [
+                {
+                    "key": "field_5901d24e30590",
+                    "label": "Social Network",
+                    "name": "social",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "Choose Social Network",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "link": "Linkedin",
+                        "tumb": "Tumblr",
+                        "vim": "Vimeo",
+                        "face": "Facebook",
+                        "twit": "Twitter",
+                        "goo": "Google +",
+                        "you": "Youtube",
+                        "insta": "Instagram",
+                        "pint": "Pinterest",
+                        "skype": "Skype",
+                        "xing": "Xing"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 1,
+                    "other_choice": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0,
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d27e30591",
+                    "label": "Linkedin",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your linkedin profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "link"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d29d30592",
+                    "label": "Tumblr",
+                    "name": "tumb",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your tumblr profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "tumb"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d2b230593",
+                    "label": "Vimeo",
+                    "name": "vim",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your vimeo profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "vim"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d2c630594",
+                    "label": "Facebook",
+                    "name": "face",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your facebook profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "face"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d2d630595",
+                    "label": "Twitter",
+                    "name": "twit",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your twitter profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "twit"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d2e630596",
+                    "label": "Google +",
+                    "name": "goo",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your google + profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "goo"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d2fd30597",
+                    "label": "Youtube",
+                    "name": "you",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your youtube profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "you"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d30c30598",
+                    "label": "Instagram",
+                    "name": "insta",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your instagram profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "insta"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d31c30599",
+                    "label": "Pinterest",
+                    "name": "pint",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your pinterest profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "pint"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_5901d32f3059a",
+                    "label": "Skype",
+                    "name": "skype",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your skype profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "skype"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                },
+                {
+                    "key": "field_597adc4686f42",
+                    "label": "Xing",
+                    "name": "xing",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Type link to your xing profile",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5901d24e30590",
+                                "operator": "==",
+                                "value": "xing"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_597ada6386f41"
+                }
+            ],
+            "rows_per_page": 20
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-social-networks"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1669227898
+}

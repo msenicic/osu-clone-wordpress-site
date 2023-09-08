@@ -1,0 +1,75 @@
+.field {
+    position: relative;
+
+    label {
+        width: 100%;
+    }
+}
+
+.field-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+textarea {
+
+}
+
+input {
+
+    &[type=search] {
+
+        &,
+        &::-webkit-search-decoration, //sass-lint:disable-line no-vendor-prefixes
+        &::-webkit-search-cancel-button, //sass-lint:disable-line no-vendor-prefixes
+        &::-webkit-search-results-button, //sass-lint:disable-line no-vendor-prefixes
+        &::-webkit-search-results-decoration { //sass-lint:disable-line no-vendor-prefixes
+            -webkit-appearance: none; //sass-lint:disable-line no-vendor-prefixes
+        }
+    }
+}
+
+input { //sass-lint:disable-line no-mergeable-selectors
+
+    &[type=text],
+    &[type=email],
+    &[type=search],
+    &[type=tel],
+    &[type=color],
+    &[type=date],
+    &[type=datetime-local],
+    &[type=datetime],
+    &[type=month],
+    &[type=number],
+    &[type=password],
+    &[type=range],
+    &[type=search],
+    &[type=time],
+    &[type=url],
+    &[type=week] {
+
+
+        &:focus {
+
+        }
+    }
+
+    &[type=checkbox],
+    &[type=radio] { //sass-lint:disable-line force-attribute-nesting no-qualifying-elements
+
+        & + span {
+
+        }
+
+        &:checked {
+
+            & + span {
+
+                &::before {
+
+                }
+            }
+        }
+    }
+}

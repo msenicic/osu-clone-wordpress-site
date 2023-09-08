@@ -1,0 +1,44 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.module-quote-block {
+  margin: 82px 0 90px;
+}
+@media only screen and (min-width: 768px) {
+  .module-quote-block {
+    margin: 140px 0;
+  }
+}
+.module-quote-block .container {
+  text-align: center;
+  padding: 0 20px;
+}
+.module-quote-block .container .quote {
+  max-width: 745px;
+  margin: 0 auto;
+}
+.module-quote-block .container .quote p {
+  margin-bottom: 0;
+  font-size: 19px;
+  line-height: 28px;
+}
+@media only screen and (min-width: 1024px) {
+  .module-quote-block .container .quote p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+.module-quote-block .container .quote p:first-child {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+}
+@media only screen and (min-width: 1024px) {
+  .module-quote-block .container .quote p:first-child {
+    font-size: 37px;
+    line-height: 46px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

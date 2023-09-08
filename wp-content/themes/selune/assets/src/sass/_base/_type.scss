@@ -1,0 +1,21 @@
+// sass-lint:disable no-important, single-line-per-selector
+
+//
+// Headings
+//
+
+.lead,
+%lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+}
+
+//
+// Emphasis
+//
+
+small,
+%small {
+  font-size: $small-font-size;
+  font-weight: $font-weight-normal;
+}

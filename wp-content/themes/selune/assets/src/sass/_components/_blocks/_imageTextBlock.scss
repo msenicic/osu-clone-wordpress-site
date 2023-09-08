@@ -1,0 +1,114 @@
+.module-image-text-block {
+    margin: 50px 0;
+
+    @include media-up(m) {
+        margin: 90px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        @include media-up(m) {
+            flex-direction: row;
+            gap: 50px;
+            padding: 0 20px;
+
+            &.invert {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .right-content {
+            flex: 1;
+            padding: 0 20px;
+
+            @include media-up(m) {
+                flex: 0 0 calc(50% - 25px);
+                max-width: calc(50% - 25px);
+                padding: 0;
+            }
+
+            h2 {
+                margin: 0;
+                margin-bottom: 20px;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 36px;
+
+                @include media-up(s) {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+
+                @include media-up(l) {
+                    font-size: 45px;
+                    line-height: 60px;
+                }
+            }
+
+            .text {
+                a {
+                    text-decoration: underline;
+                    transition: 0.5s;
+    
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .link {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                a { 
+                    padding: 15px;   
+                    font-size: 19px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: fit-content;
+
+                    @include media-up(l) {
+                        font-size: 25px;
+                        line-height: 35px;
+                        padding: 25px;
+                    }
+
+                    svg {
+                        margin-left: 20px;
+                    }
+                } 
+            }
+        }
+
+        .left-content {
+            flex: 1;
+            width: 100%;
+
+            @include media-up(m) {
+                flex: 0 0 calc(50% - 25px);
+                max-width: calc(50% - 25px);
+            }
+    
+            .slider {
+                height: 100%;
+    
+                div {
+                    height: 100%;
+    
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

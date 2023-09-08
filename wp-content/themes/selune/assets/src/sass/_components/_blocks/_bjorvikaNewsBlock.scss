@@ -1,0 +1,114 @@
+.module-bjorvika-news-block {
+    margin: 50px 0 0;
+    padding: 42px 0 37px;
+
+    @include media-up(m) {
+        margin: 72px 0 0;
+        padding: 95px 0 68px;
+    }
+
+    .container {
+        padding: 0 20px;
+
+        @include media-up(m){
+            padding: 0 50px;
+        }
+
+        @include media-up(l){
+            padding: 0 75px;
+        }
+
+        .title {
+            margin-bottom: 20px;
+
+            h3 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+
+                @include media-up(l){
+                    font-size: 32px;
+                    line-height: 41px;
+                }
+            }
+        }
+
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            @include media-up(s){
+                margin: 0 -10px;
+            }
+
+            .block {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 20px;
+                padding-bottom: 20px;
+
+                @include media-up(s) {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    padding: 0 10px;
+                }
+
+                @include media-up(m) {
+                    flex: 0 0 33.3333%;
+                    max-width: 33.3333%;
+                }
+
+                a {
+                    &:hover {
+                        h4 {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    img {
+                        max-height: 220px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .content {
+                        margin-top: 20px;
+            
+                        h4 {
+                            margin: 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 30px;
+            
+                            @include media-up(l){
+                                font-size: 25px;
+                                line-height: 35px;
+                            }
+            
+                            svg {
+                                height: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .link {
+            text-align: right;
+            margin-top: 20px;
+
+            a {
+                text-decoration: underline;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

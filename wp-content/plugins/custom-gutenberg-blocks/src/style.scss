@@ -1,0 +1,40 @@
+.module-quote-block {
+	margin: 82px 0 90px;
+
+    @media only screen and (min-width: 768px){
+        margin: 140px 0;
+    }
+
+    .container {
+        text-align: center;
+        padding: 0 20px;
+
+        .quote {
+            max-width: 745px;
+            margin: 0 auto;
+
+            p {
+                margin-bottom: 0;
+                font-size: 19px;
+                line-height: 28px;
+
+                @media only screen and (min-width: 1024px){
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+
+                &:first-child {
+                    margin-bottom: 20px;
+                    font-size: 25px;
+                    font-weight: 500;
+                    line-height: 35px;
+
+                    @media only screen and (min-width: 1024px){
+                        font-size: 37px;
+                        line-height: 46px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.module-gallery {
+    margin: 50px 0;
+
+    @include media-up(m) {
+        margin: 80px 0;
+    }
+
+    .container {
+        @include media-up(m) {
+            padding: 0 20px;
+        }
+
+        .title {
+            padding-left: 20px;
+
+            @include media-up(m) {
+                padding-left: 50px;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+
+                @include media-up(l) {
+                    font-size: 32px;
+                    line-height: 41px;
+                }
+            }
+        }
+
+        .slider {
+            overflow: hidden;
+            max-height: 700px;
+
+            div {
+                height: 100%;
+
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
